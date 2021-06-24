@@ -1,0 +1,203 @@
+@font-face { /* Définition d'une nouvelle police */
+    font-family: 'LearningCurve_OT';
+    src: url('Learning-Curve-Pro/LearningCurve_OT.otf');
+}
+
+h1 /* Utilisation de la police qu'on vient de définir sur les titres */
+{
+    font-family: 'LearningCurve_OT', Arial, serif;
+    font-size : 50px;
+
+}
+
+
+
+p
+{
+    font-size : 40px;
+    }
+
+body 
+{
+	background-image: url("images/davidstarsky.jpeg") center;
+	background: url("neige.png")fixed repeat;
+	height : 750px;
+}
+
+
+h1, p 
+{
+
+	font-family: 'LearningCurve_OT', Arial, serif;
+    text-align: center;
+    color : rgb(39,64,139);
+}
+
+
+h2 
+{
+    text-align: left;
+    color : rgb(0,0,128);
+	font-family: Arial, Impact, "Arial Black", Arial, Verdana, sans-serif;
+}
+
+
+a.imageflottante img
+
+{
+	border: 4px solid black ;
+	box-shadow: 5px 5px 0px black;
+	float:  right;
+}
+
+        
+article ul
+
+{
+margin-left: -16px;
+
+font-size: 13px;
+
+}
+
+article
+
+{
+    display: inline-block;
+
+    vertical-align: top;
+
+    text-align: justify;
+}
+
+/* Mettre paragraphes en colonne */
+@media all and (max-width: 1024px)
+{
+    article
+    {
+        width: auto;
+        display: block;
+        margin-bottom: 15px;
+    }
+    
+}
+
+
+
+article
+
+{
+    width: 15px;
+											height : 150px;
+    margin-right: 15px;
+   											 margin-bottom: 15px
+}
+
+/* Mettre cases grises plus petites */
+@media all and (max-width: 1024px)
+{
+    article
+    {
+        width: 10px;
+        display: block;
+        margin-bottom: 10px;
+        											height : 115px;
+    margin-right: 10px;
+   											 margin-bottom: 15px
+    }
+    
+}
+
+
+article
+{
+
+    position: relative;
+
+    width: 287px;
+
+    background-color: #706b64;
+
+    box-shadow: 0px 2px 5px #1c1a19;
+
+    border-radius: 5px;
+
+    padding: 5px;
+
+    color: white;
+
+    font-size: 0.9em;
+    border-width: 30px;
+}
+
+section 
+{
+
+	margin : 30px;
+	margin-right: 5px;
+
+}
+
+
+#liseret
+
+{
+ 	margin-top: -6px;
+ 	margin-bottom:5px;
+    background-color: black;
+    border-radius: 10px;
+    float: left;
+    height: 750px;
+    width: 8%;
+   
+}
+
+ /* Suppression du liseret si fenêtre trop petite */
+@media all and (max-width: 1024px)
+{
+#liseret
+    {
+        display: none;
+    }
+}
+
+
+
+#paslelisere
+{
+	overflow:auto;
+	height:100%;
+}
+
+
+{
+    display: flex;
+    padding-top: 95px;
+}
+
+
+footer 
+{
+ 	position:absolute;
+	bottom:0;
+	width:90%;
+	padding-top:50px;
+	height:50px;
+
+}
+
+footer p 
+{
+    font-size: 1.1em;
+
+}
+
+
+/* Le footer disparait si largeur sous 1024px */
+@media all and (max-width: 1024px)
+{
+    footer
+    {
+    display:none;
+    }    
+}
